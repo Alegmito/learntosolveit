@@ -252,7 +252,7 @@ int strindex(char *s,char *t)
         for(p=s,r=t;*r!='\0' && *p==*r;p++,r++)
             ;
 
-            if(r>t && *r == '\0')
+            if(*r == '\0')
                 return s-b;
     }
     return -1;
